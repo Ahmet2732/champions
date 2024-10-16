@@ -25,7 +25,7 @@ export default function Login() {
         console.log(response.data.accessToken);
   
         toast.success('Login Successfully!');
-        navigate('/home'); 
+        navigate('/dashboard'); 
       })
       .catch(error => {
         toast.error('email or password is invalied', error.message);

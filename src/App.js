@@ -1,16 +1,18 @@
 import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Home from './Components/Home/Home'
+
 import Login from './Components/Login/Login'
 import Layout from './Components/Layout/Layout'
 import UserContextProvider from './Components/Context/userContext';
 import { Toaster } from 'react-hot-toast';
 
+import Dashboard from './Components/dashboard/dashboard';
+
 
 let routes = createBrowserRouter([
   { path: '/', element: <Layout />, children: [
-    {path:"/Home", element:<Home/>},
     {index:true , element:<Login/>},
+    {path:"/dashboard",element:<Dashboard/>}
   ] }
 ])
 
@@ -21,10 +23,18 @@ let routes = createBrowserRouter([
 
 
 function App() {
+
+
   return<> 
+  
   <UserContextProvider>
-  <RouterProvider router={routes}></RouterProvider>  
+
+
+  <RouterProvider router={routes}>
+
+    </RouterProvider>  
   <Toaster />
+
     </UserContextProvider> 
   
 

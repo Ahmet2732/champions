@@ -10,7 +10,9 @@
 }
 
 body{
+  
     font-family: var(--font-family) !important;
+    background-color: (var(--shadow));
     
 }
 .rating-color
@@ -48,13 +50,9 @@ a , a:hover{
 }
 .text-main
 {
-    color: var(--main-color);
+    color: aliceblue;
 }
-.bg-main
-{
-    background-color: var(--main-color) !important;
-}
-.bg-main-light 
-{
-    background-color: var(--light-color) !important;
-}
+
+
+
+ 
