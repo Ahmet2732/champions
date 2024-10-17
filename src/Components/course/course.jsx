@@ -53,7 +53,7 @@ const Courses = () => {
 
         {/* Language */}
         <div className="mb-3">
-          <label htmlFor="language" className="form-label">Course Language *</label>
+          <label htmlFor="language" className="form-label">Course Language </label>
           <select
             className="form-select"
             name="language"
@@ -68,7 +68,7 @@ const Courses = () => {
 
         {/* Category */}
         <div className="mb-3">
-          <label htmlFor="category" className="form-label">Category *</label>
+          <label htmlFor="category" className="form-label">Category </label>
           <input
             type="text"
             className="form-control"
@@ -83,7 +83,7 @@ const Courses = () => {
 
         {/* Title */}
         <div className="mb-3">
-          <label htmlFor="title" className="form-label">Course Title *</label>
+          <label htmlFor="title" className="form-label">Course Title </label>
           <input
             type="text"
             className="form-control"
@@ -110,7 +110,7 @@ const Courses = () => {
 
         {/* Type */}
         <div className="mb-3">
-          <label htmlFor="type" className="form-label">Type *</label>
+          <label htmlFor="type" className="form-label">Type </label>
           <select
             className="form-select"
             name="type"
@@ -125,7 +125,7 @@ const Courses = () => {
 
         {/* Is Paid */}
         <div className="mb-3">
-          <label className="form-label">Is This Course Paid? *</label>
+          <label className="form-label">Is This Course Paid? </label>
           <div>
             <label className="form-check-label p-3 mx-3">
               <input
@@ -155,7 +155,7 @@ const Courses = () => {
 
         {/* Image */}
         <div className="mb-3">
-          <label htmlFor="image" className="form-label">Image *</label>
+          <label htmlFor="image" className="form-label">Image </label>
           <input
             type="file"
             className="form-control"
@@ -167,7 +167,7 @@ const Courses = () => {
 
         {/* Thumbnail */}
         <div className="mb-3">
-          <label htmlFor="thumbnail" className="form-label">Thumbnail *</label>
+          <label htmlFor="thumbnail" className="form-label">Thumbnail </label>
           <input
             type="file"
             className="form-control"
@@ -179,7 +179,7 @@ const Courses = () => {
 
         {/* Preview */}
         <div className="mb-3">
-          <label htmlFor="preview" className="form-label">Preview *</label>
+          <label htmlFor="preview" className="form-label">Preview </label>
           <input
             type="file"
             className="form-control"
