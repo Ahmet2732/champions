@@ -7,12 +7,13 @@ import UserContextProvider from './Components/Context/userContext';
 import { Toaster } from 'react-hot-toast';
 
 import Dashboard from './Components/dashboard/dashboard';
-
+import Courses from './Components/course/course';
 
 let routes = createBrowserRouter([
   { path: '/', element: <Layout />, children: [
     {index:true , element:<Login/>},
-    {path:"/dashboard",element:<Dashboard/>}
+    {path:"/dashboard",element:<Dashboard/>},
+    {path:"/Course",element:<Courses/>}
   ] }
 ])
 

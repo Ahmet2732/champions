@@ -10,6 +10,7 @@
 }
 
 body{
+  background-color: white !important;
   
     font-family: var(--font-family) !important;
     background-color: (var(--shadow));
