@@ -22,14 +22,8 @@ function Dashboard() {
   }
   const handleNavigate= () => {
     navigate ('/Course' ); };
-   
-
-
-
-
-
-
-
+    const handleNavigatee= () => {
+      navigate ('/CourseList' ); };
   return (
     <div className='container-fluid'>
       <div className='row'>
@@ -41,7 +35,7 @@ function Dashboard() {
             <button className='btn btn-light d-md-none' onClick={OpenSidebar}>X</button>
           </div>
 
-          <ul className='nav flex-column mt-4'>
+          <ul className='nav flex-column mt-4' >
             <li className='nav-item mb-2'>
               <a href="" className='nav-link text-light'><BsGrid1X2Fill className='me-2' /> Dashboard</a>
             </li>
@@ -50,7 +44,7 @@ function Dashboard() {
 
             </li>
             <li className='nav-item mb-2'>
-             <NavLink  className='nav-link text-light' >  <BsGrid1X2Fill className='me-2' /> categoury</NavLink>
+             <NavLink  className='nav-link text-light' >  <BsGrid1X2Fill className='me-2' onClick={handleNavigatee()} /> course list</NavLink>
             </li>
             <li className='nav-item mb-2'>
               <a href="" className='nav-link text-light'><BsPeopleFill className='me-2' /> Customers</a>
