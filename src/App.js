@@ -11,13 +11,15 @@ import Courses from './Components/course/course';
 
 import CourseList from './Components/courseList/courseList';
 import Login from './Components/Login/Login.service';
+import EditCourse from './Components/edit/edit';
 
 let routes = createBrowserRouter([
   { path: '/', element: <Layout />, children: [
     {index:true , element:<Login/>},
     {path:"/dashboard",element:<Dashboard/>},
     {path:"/Course",element:<Courses/>},
-    {path:"/CourseList",element:<CourseList/>}
+    {path:"/CourseList",element:<CourseList/>},
+    {path:"/edit-course/:id",element:<EditCourse/>}
   ] }
 ])
 
