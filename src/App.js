@@ -14,6 +14,7 @@ import Login from './Components/Login/Login.service';
 import EditCourse from './Components/edit/edit';
 import MentorSlider from './Components/recordedCourses/recordedCourses';
 import CourseSlider from './Components/recordedCourses/recordedCourses';
+import QuizForm from './Components/quiz/quiz';
 let routes = createBrowserRouter([
   { path: '/', element: <Layout />, children: [
     {index:true , element:<Login/>},
@@ -22,7 +23,8 @@ let routes = createBrowserRouter([
     {path:"/CourseList",element:<CourseList/>},
     {path:"/edit-course/:id",element:<EditCourse/>},
     {path:"/MentorSlider",element:<MentorSlider/>},
-    {path:"/CourseSlider",element:<CourseSlider/>}
+    {path:"/CourseSlider",element:<CourseSlider/>},
+    {path:"/QuizForm",element:<QuizForm/>}
   
   ] }
 ])

@@ -33,7 +33,9 @@ function Dashboard() {
   const handleNavigateRecorded = () => {
     navigate('/MentorSlider');
   };
-
+  const handleNavigatequiz = () => {
+    navigate('/QuizForm');
+  };
   return (
     <div className='container-fluid'>
       <div className='row'>
@@ -58,7 +60,7 @@ function Dashboard() {
               <NavLink to="#" className='nav-link text-light' onClick={handleNavigateRecorded}><BsPeopleFill className='me-2' /> Recorded Courses</NavLink>
             </li>
             <li className='nav-item mb-2'>
-              <NavLink to="#" className='nav-link text-light'><BsListCheck className='me-2' /> Inventory</NavLink>
+              <NavLink to="#" className='nav-link text-light' onClick={handleNavigatequiz}><BsListCheck className='me-2' /> quiz</NavLink>
             </li>
             <li className='nav-item mb-2'>
               <NavLink to="#" className='nav-link text-light'><BsMenuButtonWideFill className='me-2' /> Reports</NavLink>
